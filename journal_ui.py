@@ -10,11 +10,13 @@ def run_event_loop():
     journal_data = journal.load(filename)#[]
 
     while True:
-        command = input("[L]ist entries, [A]dd an entry, E[x]it: ")
+        command = input("[L]ist entries, [A]dd an entry, [D]elete an entry, E[x]it: ")
         if command.upper() == "L":
             list_entry(journal_data)
         elif command.upper() == "A":
             add_entry(journal_data)
+        elif command.upper() == "D":
+            delete_entry(journal_data)
         elif command.upper() == "X":
             break
         else:
@@ -31,6 +33,13 @@ def add_entry(data):
     entry = input("Type your entry, <ENTER> to exit: \n")
     journal.add_entry(entry, data)
     #data.append(entry)
-    
-
+def delete_entry (data):
+    print("What entry would you like to delete?")
+    list_entry(data)
+    selection = int(input("Type in the corresponding entry ID and press <ENTER>:")) - 1
+    if selection == list_entry(selection):
+        del data[selection]
+        print(f"Entry ID #{selection} was successfully deleted.")
+    else:
+        print("Sorry, that ID doesn't exist.")
 main()
