@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" id="arve" prefix="og: https://ogp.me/ns#" style="" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>What is the Shell? - Linux - The Hello World Program</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="apple-touch-icon" href="https://thehelloworldprogram.com/apple-touch-icon.png"><meta property="og:video" content="https://www.youtube.com/v/?version=3&amp;autohide=1"><meta property="og:video:type" content="application/x-shockwave-flash"><meta property="og:video:width" content="1280"><meta property="og:video:height" content="720"><meta propert="twitter:player" content="https://www.youtube.com/embed/"><meta property="twitter:player:width" content="1280"><meta property="twitter:player:height" content="720"><meta name="description" content="What is the Shell? and other computer science, programming, and web development videos and tutorials."><link rel="publisher" href="https://plus.google.com/+Thehelloworldprogram"><meta property="og:locale" content="en_US"><meta property="og:type" content="video"><meta property="og:title" content="What is the Shell? - Linux - The Hello World Program"><meta property="og:description" content="What is the Shell? and other computer science, programming, and web development videos and tutorials."><meta property="og:url" content="https://thehelloworldprogram.com/linux/shell/"><meta property="og:site_name" content="The Hello World Program"><meta property="article:section" content="Linux"><meta property="article:published_time" content="2013-09-10T20:50:17+00:00"><meta property="article:modified_time" content="2015-06-10T17:59:33+00:00"><meta property="og:updated_time" content="2015-06-10T17:59:33+00:00"><meta property="og:image" content="https://thehelloworldprogram.com/app/uploads/2013/09/what-is-the-shell-thumbnail.jpg"><meta property="og:image:width" content="1024"><meta property="og:image:height" content="659"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:description" content="What is the Shell? and other computer science, programming, and web development videos and tutorials."><meta name="twitter:title" content="What is the Shell? - Linux - The Hello World Program"><meta name="twitter:site" content="@helloworldshow"><meta name="twitter:image" content="https://thehelloworldprogram.com/app/uploads/2013/09/what-is-the-shell-thumbnail.jpg"><meta name="twitter:creator" content="@helloworldshow"><link rel="dns-prefetch" href="https://s.w.org/"><link rel="stylesheet" id="wp-block-library-css" href="index_files/style.css" type="text/css" media="all"><link rel="stylesheet" id="open-sans-font-css" href="index_files/css.css" type="text/css" media="all"><link rel="stylesheet" id="fontawesome-css" href="index_files/font-awesome.css" type="text/css" media="all"><link rel="stylesheet" id="highlight-css" href="index_files/default.css" type="text/css" media="screen"><link rel="stylesheet" id="app-css" href="index_files/app.css" type="text/css" media="all"><link rel="stylesheet" id="print-css" href="index_files/print.css" type="text/css" media="print"></head><body class="post-template-default single single-post postid-1062 single-format-video vsc-initialized">
+	
+	<header id="header" class="hide-for-small-only"><div class="row">
+			<div class="small-16 medium-12 columns small-only-text-center">
+				<div class="logo">
+					<a href="https://thehelloworldprogram.com/">
+						The <span class="logo-mid">Hello World</span> Program
+					</a>
+				</div>
+			</div>
+			<div class="medium-4 columns hide-for-small-only">
+				<ul id="social-header" class="button-group right"><li>
+						<a class="button small rss" href="https://thehelloworldprogram.com/feed/" rel="nofollow" target="_blank" title="Subscribe to our RSS Feed">
+							<i class="fa fa-rss fa-fw"></i>
+						</a>
+					</li>
+					<li>
+						<a class="button small twitter" href="https://twitter.com/helloworldshow" rel="nofollow" target="_blank" title="Follow us on Twitter">
+							<i class="fa fa-twitter fa-fw"></i>
+						</a>
+					</li>
+					<li>
+						<a class="button small youtube" href="https://www.youtube.com/helloworldprogram" rel="nofollow" target="_blank" title="Subscribe to our youtube channel">
+							<i class="fa fa-youtube fa-fw"></i>
+						</a>
+					</li>
+					<li>
+						<a class="button small facebook" href="https://www.facebook.com/HelloWorldProgram" rel="nofollow" target="_blank" title="Follow us on Facebook">
+							<i class="fa fa-facebook fa-fw"></i>
+						</a>
+					</li>
+				</ul></div>
+		</div>
+		<div class="row">
+			<div class="medium-13 large-12 columns">
+				<nav id="nav"><ul id="menu-primary" class=""><li id="menu-item-1640" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1640"><a href="https://thehelloworldprogram.com/wp/">Home</a></li>
+<li id="menu-item-1560" class="computer-science menu-item menu-item-type-post_type menu-item-object-page menu-item-1560"><a href="https://thehelloworldprogram.com/computer-science/">Learn Computer Science</a></li>
+<li id="menu-item-1562" class="linux menu-item menu-item-type-post_type menu-item-object-page menu-item-1562"><a href="https://thehelloworldprogram.com/linux/">Learn Linux</a></li>
+<li id="menu-item-1559" class="web-development menu-item menu-item-type-post_type menu-item-object-page menu-item-1559"><a href="https://thehelloworldprogram.com/web-development/">Learn Web Development</a></li>
+<li id="menu-item-1561" class="python menu-item menu-item-type-post_type menu-item-object-page menu-item-1561"><a href="https://thehelloworldprogram.com/python/">Learn Python</a></li>
+</ul></nav></div>
+		</div>
+	</header><div id="parallax" data-parallax-speed="10" class="off-canvas-wrap" data-offcanvas="" style="background-position: 50% 0px;"><div id="wrapper" class="inner-wrap">
+		
+		<nav class="tab-bar show-for-small-only"><div class="left-small">
+				<a href="#mobile-nav" role="button" aria-expanded="true" aria-controls="mobile-nav" class="left-off-canvas-toggle menu-icon">
+					<span></span>
+				</a>
+			</div>
+			<div class="right tab-bar-section">
+				<div class="logo title"><a href="https://thehelloworldprogram.com/">The <span class="logo-mid">Hello World</span> Program</a></div>
+			</div>
+		</nav><nav class="left-off-canvas-menu" id="mobile-nav"><ul class="off-canvas-list"><li><label>Look around</label></li>
+			</ul><ul id="menu-primary-1" class="off-canvas-list"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1640"><a href="https://thehelloworldprogram.com/wp/">Home</a></li>
+<li class="computer-science menu-item menu-item-type-post_type menu-item-object-page menu-item-1560"><a href="https://thehelloworldprogram.com/computer-science/">Learn Computer Science</a></li>
+<li class="linux menu-item menu-item-type-post_type menu-item-object-page menu-item-1562"><a href="https://thehelloworldprogram.com/linux/">Learn Linux</a></li>
+<li class="web-development menu-item menu-item-type-post_type menu-item-object-page menu-item-1559"><a href="https://thehelloworldprogram.com/web-development/">Learn Web Development</a></li>
+<li class="python menu-item menu-item-type-post_type menu-item-object-page menu-item-1561"><a href="https://thehelloworldprogram.com/python/">Learn Python</a></li>
+</ul><ul class="off-canvas-list"><li><label>Connect with us!</label></li>
+				<li>
+					<a class="rss" href="https://thehelloworldprogram.com/feed/" rel="nofollow" target="_blank">
+						<i class="fa fa-rss fa-fw"></i> RSS Feed					</a>
+				</li>
+				<li>
+					<a class="twitter" href="https://twitter.com/helloworldshow" rel="nofollow" target="_blank">
+						<i class="fa fa-twitter fa-fw"></i> Twitter
+					</a>
+				</li>
+				<li>
+					<a class="youtube" href="https://www.youtube.com/helloworldprogram" rel="nofollow" target="_blank">
+						<i class="fa fa-youtube fa-fw"></i> YouTube
+					</a>
+				</li>
+				<li>
+					<a class="facebook" href="https://www.facebook.com/HelloWorldProgram" rel="nofollow" target="_blank">
+						<i class="fa fa-facebook fa-fw"></i> Facebook
+					</a>
+				</li>
+			</ul></nav><a class="exit-off-canvas"></a>
+		
+		<div class="row">
+			<div id="main" class="medium-11 large-12 columns">
+						
+			<article class="section section-linux"><h1 class="section-title">What is the Shell?</h1>
+				<div class="section-content">
+											
+						<div class="arve-wrapper" data-mode="normal" data-provider="youtube" id="arve-AAnn0PNmZew" style="max-width:915px;" itemscope="" itemtype="https://schema.org/VideoObject"><div class="arve-embed-container" style="padding-bottom:56.250000%"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="arve-iframe fitvidsignore" name="" sandbox="allow-scripts allow-same-origin allow-presentation allow-popups" scrolling="no" src="index_files/AAnn0PNmZew.html" frameborder="0"></iframe></div></div>						<p></p><p>If
+ you want to access the kernel you need to use a shell. You do so 
+through a terminal window. Think of your computer is a candy-coated 
+piece of milk chocolate. Your kernel is the milk chocolate inside and 
+your shell is the hard candy outside. You can’t communicate directly 
+with the chocolate because it will melt in your hand. So you use the 
+hard candy shell to interface with your kernel.</p>
+
+															</div>
+			</article><div class="section-noheader">
+<div class="row">
+	<div class="large-8 columns text-center">
+		<div class="arve-wrapper" data-mode="normal" data-provider="youtube" id="arve-bsXqCi4zp-s" style="max-width:915px;" itemscope="" itemtype="https://schema.org/VideoObject"><div class="arve-embed-container" style="padding-bottom:56.250000%"><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="arve-iframe fitvidsignore" name="" sandbox="allow-scripts allow-same-origin allow-presentation allow-popups" scrolling="no" src="index_files/bsXqCi4zp-s.html" frameborder="0"></iframe></div></div>	</div>
+	<div class="large-8 columns">
+		<h2>Hands-on Computer Science</h2>
+		<p>Learn computer science, programming, and web development with us, your educational and entertaining super friends.</p>
+		<a href="https://www.youtube.com/subscription_center?add_user=helloworldprogram" class="button primary expand no-bottom-margin">
+			<i class="fa fa-youtube fa-fw"></i>			
+			Subscribe to our YouTube Channel
+		</a>
+	</div>
+</div>
+</div>
+            <div class="section-noheader">
+                <div class="row">
+                    <div class="medium-6 large-4 columns">
+                        <p class="hidden-for-small-only"><a href="https://thehelloworldprogram.com/author/dototot/">
+                            <img src="index_files/b63e0a2c033787b701b50db752900197.png" alt="" class="avatar avatar-250 wp-user-avatar wp-user-avatar-250 photo avatar-default" width="250" height="250"></a></p>
+                    </div>
+                    <div class="medium-10 large-12 columns">
+                        <p>
+                            <em>What is the Shell? </em>
+                                                            was produced by <a href="https://www.dototot.com/">Dototot</a>
+                            
+                            on <time datetime="2013-09-10" itemprop="datePublished">September 10th, 2013</time>.
+                            Dototot is a creative media company and 
+think tank specializing in educational material.                        </p>
+                    </div>
+                </div>
+            </div>
+
+							<article id="recommended" class="section section-linux"><div class="section-title">Recommended for You</div>
+					<div class="section-content">
+						<div class="yarpp-related">
+	<ul class="small-block-grid-2 large-block-grid-4 recommended-posts"><li>
+					<a href="https://thehelloworldprogram.com/linux/why-you-should-install-linux-now/" title="Why You Should Install Linux Now">
+						<img src="index_files/super3-300x300.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Thumbnail of Why You Should Install Linux Now" title="Why You Should Install Linux Now" width="300" height="300"><span>Why You Should Install Linux…</span>
+					</a>
+				</li>
+												<li>
+					<a href="https://thehelloworldprogram.com/linux/pwd-print-working-directory/" title="pwd or Print Working Directory">
+						<img src="index_files/thumbnail1-300x300.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Thumbnail of pwd or Print Working Directory" title="pwd or Print Working Directory" width="300" height="300"><span>pwd or Print Working Directory</span>
+					</a>
+				</li>
+												<li>
+					<a href="https://thehelloworldprogram.com/linux/getting-help-built-in-bash-shell-commands/" title="Getting Help with Built-In Bash Shell Commands">
+						<img src="index_files/super1-1-300x300.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Thumbnail of Getting Help with Built-In Bash Shell Commands" title="Getting Help with Built-In Bash Shell Commands" width="300" height="300"><span>Getting Help with Built-In Bash…</span>
+					</a>
+				</li>
+												<li>
+					<a href="https://thehelloworldprogram.com/linux/everything-file/" title="Everything is a File">
+						<img src="index_files/thumbnail4-300x300.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Thumbnail of Everything is a File" title="Everything is a File" width="300" height="300"><span>Everything is a File</span>
+					</a>
+				</li>
+						</ul></div>
+					</div>
+				</article></div>
+					<aside id="sidebar" class="medium-5 large-4 columns"><ul class="small-block-grid-1"><li id="advads_ad_widget-2" class="widget thehe-widget"><div class="widget-content">
+	<p class="text-center">
+		<a href="https://gum.co/superusers">
+			<img src="index_files/superusers.png" alt="Superusers: The Legendary GNU/Linux Show" title="Superusers: The Legendary GNU/Linux Show"></a>
+	</p>
+	<p>
+		<strong>Superusers: The Legendary GNU/Linux Show</strong> -
+		Become a superuser! Master the commands and structure of the 
+fastest-growing computer operating system, Linux. Join super friends 
+Adelie the penguin and Aramis the gnu on surreal adventures in the file 
+tree.
+	</p>
+	<a href="https://gum.co/superusers" class="button primary expand">
+		<i class="fa fa-shopping-cart fa-fw"></i>
+		Get It Now!
+	</a>
+</div></li>	</ul></aside></div>
+		<footer id="footer" class="row"><div class="small-16 columns">
+				<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4"><li>
+    <div class="footer-header">
+        <i class="fa fa-youtube"></i>
+        YouTube                        </div>
+    <p>Learn computer science, programming, and web development with us, your educational and entertaining super friends. <a target="_blank" href="https://www.youtube.com/subscription_center?add_user=helloworldprogram">Subscribe to our YouTube channel.</a></p>
+</li>
+					<li>
+						<div class="footer-header">
+							<i class="fa fa-book"></i>
+							Tutorials						</div>
+						<nav id="footnav"><ul id="menu-footer" class=""><li id="menu-item-1564" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1564"><a href="https://thehelloworldprogram.com/computer-science/">Learn Computer Science</a></li>
+<li id="menu-item-1567" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1567"><a href="https://thehelloworldprogram.com/linux/">Learn Linux</a></li>
+<li id="menu-item-1568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1568"><a href="https://thehelloworldprogram.com/python/">Learn Python</a></li>
+<li id="menu-item-1569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1569"><a href="https://thehelloworldprogram.com/web-development/">Learn Web Development</a></li>
+</ul></nav></li>
+					<li>
+						<div class="footer-header">
+							<i class="fa fa-info-circle"></i>
+							About Us						</div>
+						<p>The Hello World Program and all associated <a target="_blank" href="https://www.dototot.com/">educational videos and tutorials</a> were created by <a xmlns:cc="https://creativecommons.org/ns#" href="https://www.dototot.com/" property="cc:attributionName" rel="cc:attributionURL" target="_blank">Dototot</a> and are licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 License</a>. <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="index_files/80x15.png"></a></p>
+					</li>
+					<li>
+						<div class="footer-header">
+							<i class="fa fa-envelope-o"></i>
+							Get in Touch						</div>
+						<p>
+							Questions? Comments? Suggestions? Send us an email!							<br><a href="mailto:%69%6e%66o@%74h%65hello%77%6f%72%6cdprogram%2eco%6d">info@thehelloworldprogram.com</a>
+						</p>
+					</li>
+				</ul></div>
+		</footer></div></div>
+	<link rel="stylesheet" id="advanced-responsive-video-embedder-css" href="index_files/arve.css" type="text/css" media="all"><link rel="stylesheet" id="yarppRelatedCss-css" href="index_files/related.css" type="text/css" media="all">
+<div state="voice" class="placeholder-icon" id="tts-placeholder-icon" title="Click to show TTS button" style="background-image: url(&quot;moz-extension://a7c4b064-adca-4244-9b4b-99aa257bbfe8/data/content_script/icons/voice.png&quot;);"></div></body></html>
