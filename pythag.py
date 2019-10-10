@@ -21,6 +21,7 @@ def pythag(a,b,c):
     else:
         answer = "ERROR"
     return answer
+    
 
 #Collect a, b, and c program
 if __name__=="__main__":
